@@ -1,0 +1,21 @@
+Step 1: Check if python already installed on your system
+Open shell console
+Type “python –version”
+You should get a version number, else you should install python
+Step2: Download & Install Python
+Step3: Download & Install Pycharm
+Step4: Set Python in the Environment Variables0
+– C:\python27
+– C:\python27\Scripts
+Step5: Install Robot Framework, Selenium and Selenium2Library
+– pip install robotframework-selenium2library
+Step6: Open Pycharm
+Step7: Install the Plugins
+– File -> Settings -> PlugIns
+– Browse Repositories -> Search Intellibot, Robot Framework Support
+– Install the Plugins “Intellibot, Robot Framework Support” & restart Pycharm
+Step8: Create a Robot File
+Step9: Start Robot Framework Test
+– pybot robotfilename
+
+ref. http://myqualityassurance.de/2018/02/03/how-to-install-robot-framework-in-pycharm/

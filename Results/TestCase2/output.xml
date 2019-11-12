@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191112 10:32:55.696" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/burak.ergoren/Desktop/Robot/Tests/TestCase2.robot" id="s1" name="TestCase2">
+<test id="s1-t1" name="TestCase2">
+<kw name="Open Url" library="Browser">
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20191112 10:32:55.844" level="INFO">Opening browser 'chrome' to base url 'https://www.hepsiburada.com'.</msg>
+<status status="PASS" endtime="20191112 10:33:02.436" starttime="20191112 10:32:55.844"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:02.437" starttime="20191112 10:32:55.843"></status>
+</kw>
+<kw name="Search Product" library="SearchFilterKeywords">
+<arguments>
+<arg>${product_name}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${product_search_box}</arg>
+<arg>${Data}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:02.441" level="INFO">Typing text 'bluetooth kulaklık' into text field 'id:productSearch'.</msg>
+<status status="PASS" endtime="20191112 10:33:02.636" starttime="20191112 10:33:02.440"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:02.636" starttime="20191112 10:33:02.437"></status>
+</kw>
+<kw name="Submit Search" library="SearchFilterKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${product_search_button}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:02.638" level="INFO">Clicking button 'id:buttonProductSearch'.</msg>
+<status status="PASS" endtime="20191112 10:33:05.798" starttime="20191112 10:33:02.636"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:05.798" starttime="20191112 10:33:02.636"></status>
+</kw>
+<kw name="Select Brand" library="SearchFilterKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${jbl}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:06.098" starttime="20191112 10:33:05.799"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${jbl}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:06.121" starttime="20191112 10:33:06.098"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${jbl}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:06.121" level="INFO">Clicking element 'xpath://label[@for='brand-jbl']'.</msg>
+<status status="PASS" endtime="20191112 10:33:08.463" starttime="20191112 10:33:06.121"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:08.464" starttime="20191112 10:33:05.799"></status>
+</kw>
+<kw name="Select Color" library="SearchFilterKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${color_grey}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:08.759" starttime="20191112 10:33:08.465"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${color_grey}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:08.783" starttime="20191112 10:33:08.760"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${color_grey}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:08.783" level="INFO">Clicking element 'xpath://label[@for='attr-renktipi-Gri']'.</msg>
+<status status="PASS" endtime="20191112 10:33:09.940" starttime="20191112 10:33:08.783"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:09.941" starttime="20191112 10:33:08.464"></status>
+</kw>
+<kw name="Enter min price" library="SearchFilterKeywords">
+<arguments>
+<arg>${min_price}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${price_min}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:10.249" starttime="20191112 10:33:09.942"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${price_min}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:10.249" level="INFO">Clicking element 'xpath://input[@placeholder='En az']'.</msg>
+<status status="PASS" endtime="20191112 10:33:10.314" starttime="20191112 10:33:10.249"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${price_min}</arg>
+<arg>${Data}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:10.315" level="INFO">Typing text '750' into text field 'xpath://input[@placeholder='En az']'.</msg>
+<status status="PASS" endtime="20191112 10:33:10.401" starttime="20191112 10:33:10.315"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:10.401" starttime="20191112 10:33:09.941"></status>
+</kw>
+<kw name="Enter max price" library="SearchFilterKeywords">
+<arguments>
+<arg>${max_price}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${price_max}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:10.402" level="INFO">Clicking element 'xpath://input[@data-bind="value: maxPrice, valueUpdate:'afterkeydown', numeric"]'.</msg>
+<status status="PASS" endtime="20191112 10:33:10.469" starttime="20191112 10:33:10.402"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${price_max}</arg>
+<arg>${Data}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:10.470" level="INFO">Typing text '1000' into text field 'xpath://input[@data-bind="value: maxPrice, valueUpdate:'afterkeydown', numeric"]'.</msg>
+<status status="PASS" endtime="20191112 10:33:10.546" starttime="20191112 10:33:10.470"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:10.547" starttime="20191112 10:33:10.402"></status>
+</kw>
+<kw name="Submit Price" library="SearchFilterKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${price_submit}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:10.569" starttime="20191112 10:33:10.547"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${price_submit}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:10.570" level="INFO">Clicking element 'xpath://div[@class='range-contain-row right']'.</msg>
+<status status="PASS" endtime="20191112 10:33:11.703" starttime="20191112 10:33:10.569"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:11.703" starttime="20191112 10:33:10.547"></status>
+</kw>
+<kw name="Select Product" library="SearchFilterKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${classified_list}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:11.728" starttime="20191112 10:33:11.704"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${classified_list}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:11.729" level="INFO">Clicking element 'xpath://p[@class='hb-pl-cn']'.</msg>
+<status status="PASS" endtime="20191112 10:33:14.931" starttime="20191112 10:33:11.728"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:14.931" starttime="20191112 10:33:11.704"></status>
+</kw>
+<kw name="Check Product Comments" library="SearchFilterKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${comment_link}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:14.977" starttime="20191112 10:33:14.932"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${comment_link}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:14.978" level="INFO">Clicking element 'xpath://div[@id='comments-container']/a'.</msg>
+<status status="PASS" endtime="20191112 10:33:15.118" starttime="20191112 10:33:14.977"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:15.118" starttime="20191112 10:33:14.932"></status>
+</kw>
+<kw name="Close Cookie Alert" library="SearchFilterKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${cookie_close}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:15.431" starttime="20191112 10:33:15.119"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${cookie_close}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:15.453" starttime="20191112 10:33:15.431"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${cookie_close}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:15.453" level="INFO">Clicking element 'xpath://div[@class='cookie-info']/img'.</msg>
+<status status="PASS" endtime="20191112 10:33:15.682" starttime="20191112 10:33:15.453"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:15.682" starttime="20191112 10:33:15.119"></status>
+</kw>
+<kw name="Like first comment" library="SearchFilterKeywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${like_comment}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:15.963" starttime="20191112 10:33:15.683"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${like_comment}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:15.982" starttime="20191112 10:33:15.963"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${like_comment}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:15.983" level="INFO">Clicking element 'xpath://a[@class='yes'][1]'.</msg>
+<status status="PASS" endtime="20191112 10:33:16.034" starttime="20191112 10:33:15.983"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:16.034" starttime="20191112 10:33:15.682"></status>
+</kw>
+<kw name="Assert Review" library="SearchFilterKeywords">
+<kw name="Check Element Visible" library="Browser">
+<arguments>
+<arg>${review_success}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<status status="PASS" endtime="20191112 10:33:16.277" starttime="20191112 10:33:16.035"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191112 10:33:16.293" level="INFO">Element 'xpath://span[@class='review-agreed-message hidden']' is displayed.</msg>
+<status status="PASS" endtime="20191112 10:33:16.293" starttime="20191112 10:33:16.277"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:16.293" starttime="20191112 10:33:16.035"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:16.294" starttime="20191112 10:33:16.034"></status>
+</kw>
+<kw name="Close my Browsers" library="Browser">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20191112 10:33:16.434" starttime="20191112 10:33:16.294"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:16.435" starttime="20191112 10:33:16.294"></status>
+</kw>
+<status status="PASS" endtime="20191112 10:33:16.435" critical="yes" starttime="20191112 10:32:55.843"></status>
+</test>
+<doc>Robot framework demo</doc>
+<status status="PASS" endtime="20191112 10:33:16.436" starttime="20191112 10:32:55.700"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestCase2" pass="1">TestCase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191110 23:44:13.204" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/burak.ergoren/Desktop/Robot/Tests/test1.robot" id="s1" name="Test1">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open my Browser" library="LoginKeywords">
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20191110 23:44:13.340" level="INFO">Opening browser 'chrome' to base url 'https://www.hepsiburada.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20191110 23:44:13.363" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20191110 23:44:13.363" starttime="20191110 23:44:13.362"></status>
+</kw>
+<msg timestamp="20191110 23:44:13.366" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20191110 23:44:13.366" starttime="20191110 23:44:13.340"></status>
+</kw>
+<status status="FAIL" endtime="20191110 23:44:13.366" starttime="20191110 23:44:13.339"></status>
+</kw>
+<status status="FAIL" endtime="20191110 23:44:13.367" critical="yes" starttime="20191110 23:44:13.339">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<doc>Robot framework demo</doc>
+<status status="FAIL" endtime="20191110 23:44:13.368" starttime="20191110 23:44:13.207"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test1" pass="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191110 23:44:13.338" level="ERROR">Error in file '/Users/burak.ergoren/Desktop/Robot/Tests/test1.robot': Processing variable file '/Users/burak.ergoren/Desktop/Robot/Resources/LoginKeywords.robot' failed: Importing variable file '/Users/burak.ergoren/Desktop/Robot/Resources/LoginKeywords.robot' failed: Not a valid file or directory to import.</msg>
+</errors>
+</robot>
